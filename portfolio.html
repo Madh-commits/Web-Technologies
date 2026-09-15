@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhumathi | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b0082, #7b2cbf);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b0082;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #4b0082;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        /* EDUCATION */
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .education-card {
+            background: white;
+            padding: 28px 20px;
+            border-radius: 15px;
+            text-align: center;
+            border-top: 5px solid #7b2cbf;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+            transition: 0.3s;
+        }
+
+        .education-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .education-card h3 {
+            color: #4b0082;
+            margin-bottom: 12px;
+        }
+
+        .education-card .school {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .percentage {
+            display: inline-block;
+            background: #eee6ff;
+            color: #4b0082;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #4b0082;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+        }
+
+        .project-card h3 {
+            color: #4b0082;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 750px) {
+            .education-container,
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Madhumathi</h1>
+        <p>Student | BCA Graduate | Web Technology Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! I am <strong>Madhumathi</strong>, a BCA graduate
+                with a strong interest in Web Technologies, Programming
+                and learning new technical skills.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education-container">
+
+            <div class="education-card">
+                <h3>Secondary Education</h3>
+                <p class="school">Vikas</p>
+                <p>Completed up to 10th Standard</p>
+                <span class="percentage">9.4 CGPA</span>
+            </div>
+
+            <div class="education-card">
+                <h3>Intermediate</h3>
+                <p class="school">Sri Chaitanya</p>
+                <p>Intermediate Education</p>
+                <span class="percentage">85%</span>
+            </div>
+
+            <div class="education-card">
+                <h3>Bachelor of Computer Applications</h3>
+                <p class="school">St. Ann's College for Women</p>
+                <p>BCA</p>
+                <span class="percentage">86%</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Python</span>
+            <span class="skill">C Programming</span>
+            <span class="skill">Java Basics</span>
+            <span class="skill">Data Structures</span>
+            <span class="skill">Web Technologies</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">Problem Solving</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Web Technologies Lab</h3>
+                <p>
+                    Created webpages using HTML and CSS including
+                    formatting, lists, links, frames and forms.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Registration Form</h3>
+                <p>
+                    Designed a student registration form using HTML
+                    with input fields and a submit button.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Developed a responsive personal portfolio website
+                    using HTML and CSS.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Madhumathi | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
